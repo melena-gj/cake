@@ -2,7 +2,7 @@ body {
 	width: auto;
 	max-width: auto;
 	overflow: auto;
-	font-family: arial;
+	font-family: verdana;
 	margin: 0 auto;
 	background-size: cover;
 	background-color: white;
@@ -10,55 +10,101 @@ body {
 	overflow-y: scroll;
 }
 
-.topbar {
-	height: 50px;
-	background-color: #cc0066;
-	color: white;
+.mainbox {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.midbar {
-	height: 640px;
+.left {
+	width: 300px;
+	display: block;
+	position: fixed;
 }
 
-.lowbar {
-	height: 80px;
+.topleft {
+	height: 300px;
+	width: 300px;
+	display: block;
+	position: fixed;
+	background-color: pink;
 }
 
-.topbar input[type=button] {
-	width: 50px;
-	height: 30px;
+.bottomleft {
+	height: 300px;
+	width: 300px;
+	margin-top: 300px;
+	display: block;
+	position: fixed;
+	background-color: lightblue;
+}
+
+.right {
+	width: 300px;
+	margin-left: 300px;
+	display: block;
+	position: fixed;
+}
+
+.topright {
+	height: 300px;
+	width: 300px;
+	display: block;
+	position: fixed;
+	background-color: lightyellow;
+}
+
+.bottomright {
+	height: 300px;
+	width: 300px;
+	margin-top: 300px;
+	display: block;
+	position: fixed;
+	background-color: lightgreen;
+}
+
+.calculator {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
-	margin-right: 20px;
-	float: right;
-	background-color: #cc0066;
-	border-color: white;
-	color: white;
-	border-radius: 10%;
-	font-weight: bold;
+	border-collapse: collapse;
+	border-color: pink;
 }
 
-.midbar input[type=submit] {
-	width: 270px;
-	height: 28px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 40px;
-	margin-right: 40px;
-	background-color: #3385ff;
-	border-color: #3385ff;
+input[type=button] {
 	color: white;
-	font-weight: bold;
+	width: 40px;
+	height: 40px;
 }
 
-.midbar input[type=text] {
-	width: 270px;
+.topleft input[type=button] {
+	background-color: blue;
+	border-color: pink;
+}
+
+.topright input[type=button] {
+	background-color: red;
+	border-color: red;
+}
+
+.bottomleft input[type=button] {
+	background-color: yellow;
+}
+
+.bottomright input[type=button] {
+	background-color: green;
+}
+
+.bro input[type=button] {
+	width: 90px;
 	height: 25px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-left: 40px;
-	margin-right: 40px;
+	background-color: black;
+	border-color: black;
 }
 
-.topbar text[class=welcome] {
-	margin-top: 10px;
+.sis input[type=button] {
+	width: 40px;
+	height: 25px;
+	background-color: darkblue;
+	border-color: black;
 }
